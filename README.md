@@ -1,9 +1,9 @@
 ## Predict-ur-review
 Use Tensorflow to analyze your customer's review while they are typing it.
 
-![Screenshot_01](/public/assets/readme_01.jpg?raw=true)
-<br />
-https://predict-ur-review.herokuapp.com/
+![Screenshot_01](/public/doc/readme_01.jpg?raw=true)
+
+<p>https://predict-ur-review.herokuapp.com/</p>
 
 ## Getting Started
 <ul>
