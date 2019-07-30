@@ -1,5 +1,5 @@
 ## Predict-ur-review
-Use Tensorflow to analyze your customer's review while they are typing it.
+Use TensorFlow to analyze your customer's review while they are typing it.
 
 ![Screenshot_01](/public/doc/readme_01.jpg?raw=true)
 
