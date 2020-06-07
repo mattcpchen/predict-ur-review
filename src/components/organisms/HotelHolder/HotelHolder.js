@@ -36,11 +36,16 @@ const HotelHolder = () => {
     updateHotel(newHotel);
   };
 
+  const hotelName = allHotels[hotel]
+  const hotelImage = hotelName.split(' ').join('-')
   return (
     <Box>
-      <Heading mb={2}>{allHotels[hotel].name}</Heading>
+      <Heading mb={2}>{hotelName}</Heading>
       <ImageHolder onClick={pickRandomHotel}>
-        <CenterImage src={allHotels[hotel].image} />
+        <CenterImage
+          src={require(`./assets/images/${hotelImage}.jpg`)} // online
+          // src={`./assets/images/${hotelImage}.jpg`} // local
+        />
       </ImageHolder>
     </Box>
   )

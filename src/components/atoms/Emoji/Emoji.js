@@ -11,8 +11,8 @@ const Emoji = ({icon, size}) => {
   return (
     <StyledImage
       icon={icon}
-      // src={require('./assets/icon_'+icon+'.png')}
-      src={'./assets/emojis/icon_'+icon+'.png'}
+      src={require('./assets/icon_'+icon+'.png')} // online
+      // src={'./assets/emojis/icon_'+icon+'.png'} // local
       width={size} height={size}
     />
   )
