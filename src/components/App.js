@@ -23,8 +23,6 @@ const App = () => {
     analyzeReview(review, (a, score)=>{
       const tfScore = Number(score);
       const emojiScore = Math.round((score-0)/10); // 0-10
-      // console.log('===> ', a);
-      // console.log('===> ', tfScore, emojiScore);
       updateRating({
         tfScore: tfScore,  // 0-100
         emojiScore: emojiScore //0-10

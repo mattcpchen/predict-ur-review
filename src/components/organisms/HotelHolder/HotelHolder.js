@@ -36,16 +36,18 @@ const HotelHolder = () => {
     updateHotel(newHotel);
   };
 
+  const userUrl = window.location.href
+  const isLocal = userUrl.indexOf('localhost') > -1
   const hotelName = allHotels[hotel]
-  const hotelImage = hotelName.split(' ').join('-')
+  const hotelImage = hotelName ? hotelName.split(' ').join('-') : 'no-image'
+  const hotelImageUrl = isLocal?
+    `./assets/images/${hotelImage}.jpg` // local
+    : require(`./assets/images/${hotelImage}.jpg`) // online
   return (
     <Box>
       <Heading mb={2}>{hotelName}</Heading>
       <ImageHolder onClick={pickRandomHotel}>
-        <CenterImage
-          src={require(`./assets/images/${hotelImage}.jpg`)} // online
-          // src={`./assets/images/${hotelImage}.jpg`} // local
-        />
+        <CenterImage src={hotelImageUrl} />
       </ImageHolder>
     </Box>
   )

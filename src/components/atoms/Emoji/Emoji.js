@@ -8,13 +8,13 @@ const StyledImage = styled.img`
 `
 
 const Emoji = ({icon, size}) => {
+  const userUrl = window.location.href
+  const isLocal = userUrl.indexOf('localhost') > -1
+  const emojiUrl = isLocal
+    ? `./assets/emojis/icon_${icon}.png` // local
+    : require(`./assets/emojis/icon_${icon}.png`) // online
   return (
-    <StyledImage
-      icon={icon}
-      src={require('./assets/icon_'+icon+'.png')} // online
-      // src={'./assets/emojis/icon_'+icon+'.png'} // local
-      width={size} height={size}
-    />
+    <StyledImage icon={icon} src={emojiUrl} width={size} height={size} />
   )
 }
 
