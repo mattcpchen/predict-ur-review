@@ -1,11 +1,13 @@
 ## Predict-ur-review
 Use TensorFlow to analyze your customer's review while they are typing it.
 
+### Demo:
+The demo of this project can be found [HERE](https://predict-ur-review.herokuapp.com/)
+
+### Sneak peek:
 ![Screenshot_01](/public/doc/readme_01.jpg?raw=true)
 
-<p>https://predict-ur-review.herokuapp.com/</p>
-
-## Getting Started
+### Getting Started
 <ul>
     <li><b>npm run dev</b>: run development version</li>
     <li><b>npm run storybook</b>: only for developing components</li>
