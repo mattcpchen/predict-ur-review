@@ -31,7 +31,7 @@ const App = () => {
   }
 
   return (
-    <Container maxWidth={600} >
+    <Container maxWidth={600}>
       <Card
         boxShadowSize='xl'
         borderWidth={0}
