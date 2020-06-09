@@ -5,7 +5,9 @@ Use TensorFlow to analyze your customer's review while they are typing it.
 The demo of this project can be found [HERE](https://predict-ur-review.herokuapp.com/)
 
 ### Sneak peek:
-![Screenshot_01](/public/doc/readme_01.jpg?raw=true)
+<div align="center">
+    <img src="/public/doc/readme_01.jpg" >
+</div>
 
 ### Getting Started
 <ul>
