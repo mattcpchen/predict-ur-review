@@ -4,7 +4,7 @@ var positive = [
   "Phenomenal location, in the heart of Times Square.",
   "The staff was great. Everyone was plesant and helpful from beginning to end.",
   "The room size and view was great the bed was so comfortable everyone was very helpful beautiful hotel the only they charge 16.a day for wifi not good! But its a great hotel.",
-  "Wonderful old grande dame of NY hotels - full of history, but remarkably well kept.",
+  "Wonderful old grande dame of NY hotels - full of history, but remarkably well kept.", // this will cause error
   "Beautiful lobby and history. Great location. Restaurant staff was cordial.",
 ];
 var negative = [
@@ -15,7 +15,6 @@ var negative = [
   "Don't stay here. The street noise is deafening, all night. You need to be on the 14th floor or higher and on the backside of the hotel (Rooms in the XX20's (like 1420). Really cheap windows make sleep an impossibility unless you have the right room.",
   "Location and felt safe. But The frosted glass on the bathroom door",
   "Location and price are good. Computer use in the basement. Purified water in the gym. However, Upon check-in we were not told about how to access wi-fi. We went back to them to ask Upon check-in we were also not informed that we needed to spend $30.00 a day there as we would be charged $30.00 a day whether we used it or not.",
-
 ];
 var neutral = [
   "Charged me $30/night for Destination Fee - it is mandatory and worthless! I had no idea about this hidden fee when I booked the hotel.",

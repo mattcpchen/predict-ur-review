@@ -21,6 +21,7 @@ const App = () => {
 
   const analyze = (review) => {
     analyzeReview(review, (a, score)=>{
+      if (!score) score = 50 // in case we get Nan
       const tfScore = Number(score);
       const emojiScore = Math.round((score-0)/10); // 0-10
       updateRating({

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Emoji from '../Emoji';
 
+
 const EmojiRating = ({iconSize, rating}) => (
   <div>{
     rating === 0

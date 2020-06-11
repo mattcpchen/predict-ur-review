@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {Box, Heading, Image} from "pcln-design-system";
 import allHotels from '../../../data/hotels';
 import styled from 'styled-components'
+import hotelImages from "../../../images/hotelImages";
 
 
 const ImageHolder = styled.div`
@@ -36,18 +37,13 @@ const HotelHolder = () => {
     updateHotel(newHotel);
   };
 
-  const userUrl = window.location.href
-  const isLocal = userUrl.indexOf('localhost') > -1
   const hotelName = allHotels[hotel]
-  const hotelImage = hotelName ? hotelName.split(' ').join('-') : 'no-image'
-  const hotelImageUrl = isLocal?
-    `./assets/images/${hotelImage}.jpg` // local
-    : require(`./assets/images/${hotelImage}.jpg`) // online
+  const hotelImage = hotelName ? hotelName.split(' ').join('_') : 'No_Image'
   return (
     <Box>
       <Heading mb={2}>{hotelName}</Heading>
       <ImageHolder onClick={pickRandomHotel}>
-        <CenterImage src={hotelImageUrl} />
+        <CenterImage src={hotelImages[hotelImage]} />
       </ImageHolder>
     </Box>
   )

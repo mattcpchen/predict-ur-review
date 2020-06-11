@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import emojiIcons from '../../../images/emojiIcons'
 
 
 const StyledImage = styled.img`
@@ -8,13 +9,9 @@ const StyledImage = styled.img`
 `
 
 const Emoji = ({icon, size}) => {
-  const userUrl = window.location.href
-  const isLocal = userUrl.indexOf('localhost') > -1
-  const emojiUrl = isLocal
-    ? `./assets/emojis/icon_${icon}.png` // local
-    : require(`./assets/emojis/icon_${icon}.png`) // online
+  const emojiIcon = `icon_${icon}`
   return (
-    <StyledImage icon={icon} src={emojiUrl} width={size} height={size} />
+    <StyledImage icon={icon} src={emojiIcons[emojiIcon]} width={size} height={size} />
   )
 }
 
