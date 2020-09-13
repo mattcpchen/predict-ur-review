@@ -6,8 +6,7 @@ The demo of this project can be found [HERE](https://predict-ur-review.herokuapp
 
 ### Sneak peek:
 <div align="left">
-    Before: <img src="/public/doc/readme_01.jpg" >
-    After: <img src="/public/doc/readme_02.jpg" >
+    <img src="/public/doc/readme_01.jpg" >
 </div>
 
 ### Getting Started
